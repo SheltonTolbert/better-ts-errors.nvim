@@ -72,9 +72,11 @@ use {
 <td>
 
 ```lua
--- No idea how to set dependency in vim-plug, pls let me know if you use it
--- You need to have "MunifTanjim/nui.nvim" as Dependency
-Plug "better-ts-errors.nvim", { "tag": "*" }
+-- vim-plug no longer handles dependencies between plugins and it's 
+-- up to the user to manually specify Plug commands for dependent plugins.
+-- https://github.com/junegunn/vim-plug/wiki/faq#managing-dependencies 
+Plug "MunifTanjim/nui.nvim"
+Plug "OlegGulevskyy/better-ts-errors.nvim"
 ```
 
 </td>
